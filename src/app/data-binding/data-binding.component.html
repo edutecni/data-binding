@@ -65,7 +65,7 @@
 </section>
 -->
 
-<section class="event-binding">
+<!-- <section class="event-binding">
   <article>
     <h3>Evengt Binding</h3>
     <div>
@@ -91,4 +91,21 @@
 
     </div>
   </article>
+</section> -->
+
+<section class = "two-way-binding">
+  <article>
+    <h3>Two-Way Data Binging</h3>
+  </article>
+  <div>
+
+    <input type="text"
+      [value] = "nome"
+      (input) = "nome = getNome($event)"
+    />
+
+    <p>Voce digitou: {{ nome }}</p>
+
+
+  </div>
 </section>
