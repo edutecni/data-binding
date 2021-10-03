@@ -19,12 +19,9 @@ export class DataBindingComponent implements OnInit {
 
   isMouseOver: boolean = false;
 
-  nome: string = 'abc';
 
-  pessoa: any = {
-    nome: 'def',
-    idade: 20
-  };
+  nomeDoCurso: string = 'Angular';
+
 
 
   botaoClicado(){
@@ -56,14 +53,7 @@ export class DataBindingComponent implements OnInit {
     return true;
   }
 
-  // Agora é obrigatório criar uma função para obeter o valor do Elemento HTML
-  getNome(evento: Event): string
-  {
-    if(evento)
-      return (evento.target as HTMLInputElement).value;
-    else
-      return 'abc';
-  }
+
 
   constructor() { }
 
